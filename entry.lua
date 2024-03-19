@@ -53,7 +53,7 @@ InputProfiles=
 -------------------------------------------------- ----------------------------------
 --Mount the 3D model directory and texture file directory
 mount_vfs_texture_path (current_mod_path.."/Cockpit/Resources/Model/Textures")
-mount_vfs_texture_path (current_mod_path.."/Cockpit/Textures/CPT_TEX")
+mount_vfs_texture_path (current_mod_path.."/Cockpit/Textures/A-6E-CPT")
 --Mount model
 mount_vfs_model_path (current_mod_path.."/Shapes")
 mount_vfs_model_path (current_mod_path.."/Shapes/Loads") -- add weapon, pod and tanks
