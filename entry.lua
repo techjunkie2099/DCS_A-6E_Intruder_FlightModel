@@ -65,7 +65,7 @@ mount_vfs_texture_path (current_mod_path.."/Textures")
 mount_vfs_texture_path (current_mod_path.."/Textures/A-6E")
 mount_vfs_texture_path (current_mod_path.."/Textures/A-6E-CPT")
 mount_vfs_texture_path (current_mod_path.."/Textures/A-6E-WEAPON")
-         
+  
  
 -------------------------------------------------- ----------------------------------------
 -- Option Cockpit operationnel, HUD partiel
