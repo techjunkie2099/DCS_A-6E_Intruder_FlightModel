@@ -86,7 +86,7 @@ A_6e = {
 	Name = "A-6E",
 	DisplayName = _("A-6E"),
 	ViewSettings        = ViewSettings,
-	-- 为所有国家启用A-6E
+	-- Enable A-6E for all countries
 	Countries = {"Abkhazia","Australia","Austria","Belarus","Belgium","Brazil","Bulgaria","Canada","China","Croatia",
                  "Czech Republic","Denmark","Egypt","Finland","France","Georgia","Germany","Greece","Hungary",
                  "India","Insurgents","Iran","Iraq","Israel","Italy","Japan","Kazakhstan","The Netherlands","North Korea",
@@ -119,8 +119,8 @@ A_6e = {
 		}
 
 	},
-	----外部动画描述
-	-- 限制32个动画
+	----External animation description
+	--Limit 32 animations
 	net_animation = {
         0, -- front gear
         3, -- right gear
@@ -162,43 +162,43 @@ A_6e = {
 	attribute = {wsType_Air, wsType_Airplane, wsType_Fighter, WSTYPE_PLACEHOLDER, "Fighters", "Refuelable"},
 	Categories = {"{78EFB7A2-FD52-4b57-A6A6-3BF0E1D6555F}", "Interceptor",}, 
 
-	M_empty 			= 12836, --14500, --空重
+	M_empty 			= 12836, --14500, --empty weight
 	M_nominal 			= 25000, --23000, 
-	M_max 				= 29000, --最大重量
-	M_fuel_max 			= 7230,  --9400, --最大燃油重量
-	H_max 				= 12900, --最大高度
+	M_max 				= 29000, --maximum weight
+	M_fuel_max 			= 7230,  --9400, --Maximum fuel weight
+	H_max 				= 12900, --maximum height
 	-------------------------
-	length 				= 16.733, --长度（m)
-	height 				= 4.938, --高度（m）
-	wing_area 			= 49.14,	--机翼面积
-	wing_span 			= 16.154, 	--机翼跨度
-	wing_tip_pos 		= {-0.983, -0.809, 8.138},  --机翼坐标（前后 上下 左右）
-	wing_type 			= 0, 	--机翼类型
-	flaps_maneuver 		= 1.0, 	--起飞时最大襟翼(0.5为一级，1.0为两级)(仅AI使用此参数)
-	has_speedbrake 		= true, --有空气刹车
+	length 				= 16.733, --Length (m)
+	height 				= 4.938, --Height (m)
+	wing_area 			= 49.14, --Wing area
+	wing_span 			= 16.154, --Wing span
+	wing_tip_pos 		= {-0.983, -0.809, 8.138},  --Wing coordinates (front and rear, up and down, left and right)
+	wing_type 			= 0, 	--Wing type
+	flaps_maneuver 		= 1.0, 	--Maximum flaps during takeoff (0.5 is one level, 1.0 is two levels) (only AI uses this parameter)
+	has_speedbrake 		= true, --With air brakes
 
-	RCS					= 4.0, --正面雷达反射面积（m2）F16的标准截面积为4.0
-	IR_emission_coeff	= 1, --红外发射系数（无加力）
-	IR_emission_coeff_ab= 1, --红外发射系数（加力）
+	RCS					= 4.0, --Front radar reflection area (m2) The standard cross-sectional area of F16 is 4.0
+	IR_emission_coeff	= 1, --Infrared emission coefficient (without afterburner
+	IR_emission_coeff_ab= 1, --Infrared emission coefficient (afterburner)
 
-	stores_number 		= 5, --挂架数量
+	stores_number 		= 5, --Quantity of racks
 
 	CAS_min 			= 58, 
 	V_opt 				= 211.944,
- 	V_take_off 			= 64, --67, --离地速度AI（m/s)
- 	V_land 				= 64, --63, --着陆速度AI（m/s)
- 	V_max_sea_level 	= 288.89, --最大海平面速度AI（m/s)
- 	V_max_h 			= 205.778, --最大高度速度AI（m/s)
+ 	V_take_off 			= 64, --67, --Ground speed AI (m/s)
+ 	V_land 				= 64, --63, --Landing speed AI (m/s)
+ 	V_max_sea_level 	= 288.89, --Maximum sea level speed AI (m/s)
+ 	V_max_h 			= 205.778, --Maximum altitude speed AI (m/s)
 	Vy_max 				= 38.7, 
- 	Mach_max 			= 0.92, --最大马赫数AI
- 	Ny_min 				= -2.4,--最小过载AI
- 	Ny_max 				= 6.5, --最大过载AI
+ 	Mach_max 			= 0.92, --Maximum Mach number AI
+ 	Ny_min 				= -2.4,--Minimum overload AI
+ 	Ny_max 				= 6.5, --Maximum overload AI
  	Ny_max_e 			= 7,
  	AOA_take_off 		= 0.15, 
 	bank_angle_max 		= 45,
-	range 				= 5291, --航程AI
+	range 				= 5291, --Voyage AI
 	
-	thrust_sum_max 				= 7892, --推力最大值（千牛）//注意：此处单位被标记为kg
+	thrust_sum_max 				= 7892, --Maximum thrust (thousand newtons) //Note: The unit here is marked as kg
 	has_afteburner 				= false,
 	has_differential_stabilizer = false,
 	--thrust_sum_ab 				= 7892,
@@ -207,12 +207,12 @@ A_6e = {
 	tanker_type 				= 3,
 	air_refuel_receptacle_pos 	= {0, 0, 0},
 
-	nose_gear_pos 			    = { 4.226,  -2.661 - 0.225,   0},--前起落架坐标（前后 上下 左右）
-	main_gear_pos 			    = { -1.472,  -2.353 - 0.385,   1.839},--主起落架坐标（前后 上下 左右）
-	tand_gear_max 				= 1.963, --前轮最大旋转角度的tan值
+	nose_gear_pos 			    = { 4.226,  -2.661 - 0.225,   0},--Nose landing gear coordinates (front and rear, up and down, left and right)
+	main_gear_pos 			    = { -1.472,  -2.353 - 0.385,   1.839},--Main landing gear coordinates (front, rear, up, down, left, and right)
+	tand_gear_max 				= 1.963, --The tan value of the maximum rotation angle of the front wheel
 
-	nose_gear_wheel_diameter 	= 0.45,--前机轮直径（m)
-	main_gear_wheel_diameter 	= 0.77,--主机轮直径（m）
+	nose_gear_wheel_diameter 	= 0.45, --Front wheel diameter (m)
+	main_gear_wheel_diameter 	= 0.77, --Main wheel diameter (m)
 	brakeshute_name 			= 4, 
 
 	nose_gear_amortizer_direct_stroke			=  3.394 - 3.394,
@@ -225,26 +225,26 @@ A_6e = {
 
 	launch_bar_connected_arg_value = 0.95 ,
 
-	engines_count	=	2,--发动机数量
+	engines_count	=	2, --Number of engines
 	engines_nozzles = 
 	{
 		[1] = 
 		{
-			pos 		=  {-0.927, -1.159, 1.159}, --右发坐标
+			pos 		=  {-0.927, -1.159, 1.159}, --Right hair coordinates
 			elevation   =  0,  
-			diameter	 = 0.5,  --马赫环直径
+			diameter	 = 0.5,  --Mach ring diameter
 			exhaust_length_ab   = 2, 
 			exhaust_length_ab_K = 0.3, 
-			smokiness_level = 0.3,--烟
+			smokiness_level = 0.3, --cigarette
 		}, 
         [2] = 
 		{
-			pos 		=  {-0.927, -1.159, -1.159}, --左发坐标
+			pos 		=  {-0.927, -1.159, -1.159}, --Left hair coordinates
 			elevation   =  0,  
-			diameter	 = 0.5,  --马赫环直径
+			diameter	 = 0.5,  --Mach ring diameter
 			exhaust_length_ab   = 2, 
 			exhaust_length_ab_K = 0.3, 
-			smokiness_level = 0.3,--烟
+			smokiness_level = 0.3,--cigarette
 		}, 
 	},
 
